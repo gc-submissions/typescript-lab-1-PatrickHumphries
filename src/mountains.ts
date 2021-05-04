@@ -1,4 +1,4 @@
-interface Mountain {
+export interface Mountain {
   name: string;
   height: number;
 }
@@ -9,8 +9,8 @@ let mountains: Mountain[] = [
   { name: 'Denali', height: 20310}
 ];
 
-function findNameOfTallestMountain(array: Mountain[]): string {
-    let tallest: Mountain = mountains[0];
+export function findNameOfTallestMountain(array: Mountain[]): string {
+    let tallest = mountains[0];
     if (array.length === 0) {
         return "";
     }
@@ -21,3 +21,6 @@ function findNameOfTallestMountain(array: Mountain[]): string {
     }
     return tallest.name;
 }
+
+let result = findNameOfTallestMountain(mountains);
+console.log(result);
