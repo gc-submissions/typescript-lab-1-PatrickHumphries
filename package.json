@@ -8,7 +8,7 @@
     "start": "ts-node src/index.ts",
     "start:dev": "nodemon src/index.ts",
     "test": "jest",
-    "test:dev": "jest --watchAll"
+    "test:dev": "jest --watch"
   },
   "author": "Grand Circus Detroit",
   "license": "ISC",
